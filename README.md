@@ -32,10 +32,7 @@ GH_TOKEN=$(gh auth token) DRY_RUN=true python sync_forks.py
 ```
 
 ## Notes
-## What I learned
 
-- Merge conflicts happen when a fork has commits the original doesn't.
-- "Discard commits" on the Sync fork button fixes them.
 - It only touches each fork's **default branch**. Other branches are left alone.
 - Archived forks are skipped.
 - If a fork has its own commits, GitHub creates a merge commit. If the changes conflict, the fork is left untouched and listed in the tracking issue.
